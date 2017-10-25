@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f6c4ee17-96fc-46e5-8534-8ffe22da155b",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f6c4ee17-96fc-46e5-8534-8ffe22da155b" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f6c4ee17-96fc-46e5-8534-8ffe22da155b" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A65C7D93-29E5-490F-BC1B-BB67DD992A7E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f6c4ee17-96fc-46e5-8534-8ffe22da155b" : "FrameTemplatePro\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FrameTemplate",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/FrameTemplate\/FrameTemplate.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/FrameTemplatePro",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f6c4ee17-96fc-46e5-8534-8ffe22da155b"
+    }
+  ]
+}
