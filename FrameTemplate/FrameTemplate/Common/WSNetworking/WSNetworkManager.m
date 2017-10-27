@@ -75,6 +75,12 @@
     }];
      */
     
+#ifdef DEBUG
+    NSLog(@"=================param=================");
+    NSLog(@"%@", params);
+    NSLog(@"=======================================");
+#endif
+    
     [manager POST:action parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *response = (NSDictionary*)responseObject;
         

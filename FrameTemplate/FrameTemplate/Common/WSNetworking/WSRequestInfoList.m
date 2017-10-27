@@ -44,7 +44,7 @@
 #pragma -mark 公共方法
 
 - (void)reloadListData {
-    _page = 0;
+    _page = START_PAGE;
     [self request];
 }
 

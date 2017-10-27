@@ -13,8 +13,10 @@
 
 #define Action_file_upload @"file/upload"
 
-#pragma mark /*********************** 登录模块 ***********************/
+#pragma mark /*********************** xx模块 ***********************/
 
 #define Action_user_login @"user/login"
+
+#define Action_notice_list @"notice/list"
 
 #endif /* InterfaceMacro_h */
