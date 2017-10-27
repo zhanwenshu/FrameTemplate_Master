@@ -497,10 +497,10 @@
 		93788A561F9EE6D600DFA8BA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9364DD221FA3157900A359F6 /* WSTableViewController */,
 				93788AB11F9F326F00DFA8BA /* common.h */,
 				93788AB21F9F326F00DFA8BA /* common.m */,
 				93788B061F9F3F7A00DFA8BA /* UtilMacro.h */,
+				9364DD221FA3157900A359F6 /* WSTableViewController */,
 				93788AFB1F9F373400DFA8BA /* Encryption */,
 				93788AC41F9F372900DFA8BA /* Category */,
 				93788A571F9EE6FA00DFA8BA /* WSNetworking */,
