@@ -20,6 +20,7 @@
 #import "InterfaceMacro.h"
 #import "NSObject+WHC_Model.h"
 #import "WSRequestInfoList.h"
+#import "SystemConfig.h"
 
 #endif
 #endif /* PrefixHeader_pch */

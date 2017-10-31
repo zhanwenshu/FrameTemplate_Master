@@ -56,6 +56,7 @@
 		9364DE901FA86EB000A359F6 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364DE8E1FA86EB000A359F6 /* CollectionViewCell.m */; };
 		9364DE911FA86EB000A359F6 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9364DE8F1FA86EB000A359F6 /* CollectionViewCell.xib */; };
 		9364DE941FA8737C00A359F6 /* WSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364DE931FA8737C00A359F6 /* WSCollectionViewController.m */; };
+		9364DE981FA87A5F00A359F6 /* WSPayControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364DE971FA87A5F00A359F6 /* WSPayControlManager.m */; };
 		93788A0E1F9EDE5400DFA8BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93788A0D1F9EDE5400DFA8BA /* main.m */; };
 		93788A111F9EDE5500DFA8BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93788A101F9EDE5500DFA8BA /* AppDelegate.m */; };
 		93788A141F9EDE5500DFA8BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93788A131F9EDE5500DFA8BA /* ViewController.m */; };
@@ -194,6 +195,9 @@
 		9364DE8F1FA86EB000A359F6 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		9364DE921FA8737C00A359F6 /* WSCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCollectionViewController.h; sourceTree = "<group>"; };
 		9364DE931FA8737C00A359F6 /* WSCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCollectionViewController.m; sourceTree = "<group>"; };
+		9364DE961FA87A5F00A359F6 /* WSPayControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPayControlManager.h; sourceTree = "<group>"; };
+		9364DE971FA87A5F00A359F6 /* WSPayControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPayControlManager.m; sourceTree = "<group>"; };
+		9364DE991FA87C1200A359F6 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemConfig.h; sourceTree = "<group>"; };
 		93788A091F9EDE5300DFA8BA /* FrameTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93788A0D1F9EDE5400DFA8BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93788A0F1F9EDE5400DFA8BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -510,6 +514,15 @@
 			path = CollectionVC;
 			sourceTree = "<group>";
 		};
+		9364DE951FA87A0D00A359F6 /* WSPayControl */ = {
+			isa = PBXGroup;
+			children = (
+				9364DE961FA87A5F00A359F6 /* WSPayControlManager.h */,
+				9364DE971FA87A5F00A359F6 /* WSPayControlManager.m */,
+			);
+			path = WSPayControl;
+			sourceTree = "<group>";
+		};
 		93788A001F9EDE5300DFA8BA = {
 			isa = PBXGroup;
 			children = (
@@ -623,7 +636,9 @@
 			children = (
 				93788AB11F9F326F00DFA8BA /* common.h */,
 				93788AB21F9F326F00DFA8BA /* common.m */,
+				9364DE991FA87C1200A359F6 /* SystemConfig.h */,
 				93788B061F9F3F7A00DFA8BA /* UtilMacro.h */,
+				9364DE951FA87A0D00A359F6 /* WSPayControl */,
 				9364DD221FA3157900A359F6 /* WSTableViewController */,
 				93788AFB1F9F373400DFA8BA /* Encryption */,
 				93788AC41F9F372900DFA8BA /* Category */,
@@ -862,6 +877,7 @@
 				93788AF91F9F372900DFA8BA /* UIView+Layout.m in Sources */,
 				93788AF21F9F372900DFA8BA /* UIImage+PixelColor.m in Sources */,
 				9364DD7C1FA31FF300A359F6 /* MessageModel.m in Sources */,
+				9364DE981FA87A5F00A359F6 /* WSPayControlManager.m in Sources */,
 				93788A0E1F9EDE5400DFA8BA /* main.m in Sources */,
 				93788A4D1F9EE59C00DFA8BA /* AFAutoPurgingImageCache.m in Sources */,
 				9364DD6A1FA3168B00A359F6 /* UIScrollView+MJRefresh.m in Sources */,
