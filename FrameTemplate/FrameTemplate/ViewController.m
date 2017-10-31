@@ -11,6 +11,7 @@
 #import "Base64Util.h"
 #import "NSString+DES.h"
 #import "ListViewController.h"
+#import "CollectionListViewController.h"
 
 @interface ViewController ()
 
@@ -68,6 +69,11 @@
 
 - (IBAction)requestListInfo:(id)sender {
     ListViewController *listVC = [[ListViewController alloc]init];
+    [self.navigationController pushViewController:listVC animated:YES];
+}
+
+- (IBAction)requestCollectionListInfo:(id)sender {
+    CollectionListViewController *listVC = [[CollectionListViewController alloc]init];
     [self.navigationController pushViewController:listVC animated:YES];
 }
 

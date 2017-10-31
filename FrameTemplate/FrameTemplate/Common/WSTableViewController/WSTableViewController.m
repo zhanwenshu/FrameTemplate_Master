@@ -8,7 +8,7 @@
 
 #import "WSTableViewController.h"
 
-@interface WSTableViewController ()<WSRefreshTableViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface WSTableViewController ()<WSRefreshDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @end
 

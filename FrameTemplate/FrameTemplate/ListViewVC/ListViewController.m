@@ -62,7 +62,7 @@
 }
 
 
-#pragma -mark WSRefreshTableViewDelegate
+#pragma -mark WSRefreshDelegate
 
 - (void)getHeaderDataSoure { // 下拉刷新代理
     [_infoList reloadListData];
