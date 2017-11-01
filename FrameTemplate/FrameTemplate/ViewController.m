@@ -23,6 +23,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"实用Demo";
+    
+    [self createNavigationLeftItemWithTitle:@"左边"];
+    [self createNavigationRightItemWithTitle:@"右边"];
 }
 
 
@@ -68,13 +71,19 @@
 }
 
 - (IBAction)requestListInfo:(id)sender {
-    ListViewController *listVC = [[ListViewController alloc]init];
-    [self.navigationController pushViewController:listVC animated:YES];
+    [self pushViewControllerWithIdentifier:@"ListViewController" values:nil block:nil];
 }
 
 - (IBAction)requestCollectionListInfo:(id)sender {
-    CollectionListViewController *listVC = [[CollectionListViewController alloc]init];
-    [self.navigationController pushViewController:listVC animated:YES];
+    [self pushViewControllerWithIdentifier:@"CollectionListViewController" values:nil block:nil];
+}
+
+- (void)selectedNavigationRightItem:(id)sender {
+    NSLog(@"右边");
+}
+
+- (void)selectedNavigationLeftItem:(id)sender {
+    NSLog(@"左边");
 }
 
 @end

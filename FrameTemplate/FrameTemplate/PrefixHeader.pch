@@ -21,6 +21,7 @@
 #import "NSObject+WHC_Model.h"
 #import "WSRequestInfoList.h"
 #import "SystemConfig.h"
+#import "UIViewController+Addition.h"
 
 #endif
 #endif /* PrefixHeader_pch */

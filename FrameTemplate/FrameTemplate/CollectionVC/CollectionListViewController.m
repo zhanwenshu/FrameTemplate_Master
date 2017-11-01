@@ -26,6 +26,8 @@ static NSString * CollectionViewCellID1 = @"collectionViewCellID1";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"CollectionView列表实例";
+    [self setNavigationBackItem];
+    
     [self setup];
     [self requestList];
 }

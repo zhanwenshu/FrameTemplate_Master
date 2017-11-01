@@ -9,6 +9,11 @@
 #ifndef UtilMacro_h
 #define UtilMacro_h
 
+// system version
+#define isIos7System [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0
+#define isIos8System [[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0
+#define isIos9System [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0
+
 #define BYTE_TO_MB(byte) ((byte)/1024.0/1024.0)
 #define KB_TO_MB(kb) ((kb)/1024.0)
 #define BYTE_TO_KB(byte) ((byte)/1024.0)

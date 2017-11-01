@@ -57,6 +57,7 @@
 		9364DE911FA86EB000A359F6 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9364DE8F1FA86EB000A359F6 /* CollectionViewCell.xib */; };
 		9364DE941FA8737C00A359F6 /* WSCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364DE931FA8737C00A359F6 /* WSCollectionViewController.m */; };
 		9364DE981FA87A5F00A359F6 /* WSPayControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9364DE971FA87A5F00A359F6 /* WSPayControlManager.m */; };
+		93710C691FA9BD1300F09225 /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 93710C681FA9BD1300F09225 /* UIViewController+Addition.m */; };
 		93788A0E1F9EDE5400DFA8BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93788A0D1F9EDE5400DFA8BA /* main.m */; };
 		93788A111F9EDE5500DFA8BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93788A101F9EDE5500DFA8BA /* AppDelegate.m */; };
 		93788A141F9EDE5500DFA8BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93788A131F9EDE5500DFA8BA /* ViewController.m */; };
@@ -198,6 +199,8 @@
 		9364DE961FA87A5F00A359F6 /* WSPayControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPayControlManager.h; sourceTree = "<group>"; };
 		9364DE971FA87A5F00A359F6 /* WSPayControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPayControlManager.m; sourceTree = "<group>"; };
 		9364DE991FA87C1200A359F6 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemConfig.h; sourceTree = "<group>"; };
+		93710C671FA9BD1300F09225 /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
+		93710C681FA9BD1300F09225 /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
 		93788A091F9EDE5300DFA8BA /* FrameTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93788A0D1F9EDE5400DFA8BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93788A0F1F9EDE5400DFA8BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -718,6 +721,8 @@
 				93788AE61F9F372900DFA8BA /* UIView+Layout.m */,
 				93788AE71F9F372900DFA8BA /* UIView+NIB.h */,
 				93788AE81F9F372900DFA8BA /* UIView+NIB.m */,
+				93710C671FA9BD1300F09225 /* UIViewController+Addition.h */,
+				93710C681FA9BD1300F09225 /* UIViewController+Addition.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -890,6 +895,7 @@
 				9364DE941FA8737C00A359F6 /* WSCollectionViewController.m in Sources */,
 				93788B141FA08A4900DFA8BA /* NSObject+WHC_Model.m in Sources */,
 				93788AF61F9F372900DFA8BA /* UITextField+Addition.m in Sources */,
+				93710C691FA9BD1300F09225 /* UIViewController+Addition.m in Sources */,
 				93788AF81F9F372900DFA8BA /* UIView+Addtion.m in Sources */,
 				93788AC31F9F35DE00DFA8BA /* SVRadialGradientLayer.m in Sources */,
 				93788AEF1F9F372900DFA8BA /* NSString+MD5.m in Sources */,
@@ -1020,6 +1026,7 @@
 				);
 				GCC_PREFIX_HEADER = FrameTemplate/PrefixHeader.pch;
 				INFOPLIST_FILE = FrameTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1046,6 +1053,7 @@
 				);
 				GCC_PREFIX_HEADER = FrameTemplate/PrefixHeader.pch;
 				INFOPLIST_FILE = FrameTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

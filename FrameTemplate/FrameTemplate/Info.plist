@@ -108,5 +108,7 @@
 		<string>tencentapi.qq.reqContent</string>
 		<string>tencentapi.qzone.reqContent</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

@@ -29,6 +29,7 @@
     UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = navVC;
     
+    [self navigationBarConfig];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -118,5 +119,12 @@
                 break;
         }
     }
+}
+
+- (void)navigationBarConfig {
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    [[UINavigationBar appearance] setBarTintColor: MAIN_COLOR];
+    [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont boldSystemFontOfSize:18]}];
+    [[UIBarButtonItem appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName : [UIColor whiteColor], NSFontAttributeName : [UIFont boldSystemFontOfSize:16]} forState: 0];
 }
 @end
