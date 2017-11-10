@@ -58,7 +58,7 @@
 - (void)request {
     _params[kPage] = @(_page);
     __weak WSRequestInfoList *weakSelf = self;
-    [WSNetworkManager postWithAction:_action params:_params successBlock:^(NSInteger errCode, id data, NSString *action, NSString *msg) {
+    [[WSNetworkManager shareManager]postWithAction:_action params:_params successBlock:^(NSInteger errCode, id data, NSString *action, NSString *msg) {
         if (errCode == 0) {
             if (weakSelf.page == START_PAGE) {
                 [weakSelf.tempList removeAllObjects];

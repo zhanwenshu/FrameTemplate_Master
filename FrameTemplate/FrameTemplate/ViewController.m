@@ -47,7 +47,7 @@
     param[@"sign"] = md5;
     
     
-    [WSNetworkManager postWithAction:Action_user_login params:param successBlock:^(NSInteger errCode, id data, NSString *action, NSString *msg) {
+    [[WSNetworkManager shareManager]postWithAction:Action_user_login params:param successBlock:^(NSInteger errCode, id data, NSString *action, NSString *msg) {
         NSLog(@"%@", data);
     } failureBlock:^(NSError *error, NSString *errorDesc) {
         
@@ -63,7 +63,7 @@
     [imageDict setObject:@"tu_01" forKey:@"fileName"];
     NSArray *images = [NSArray arrayWithObject:imageDict];
     
-    [WSNetworkManager uploadWithAction:Action_file_upload images:images params:param successBlock:^(NSInteger errCode, id data, NSString *action, NSString *msg) {
+    [[WSNetworkManager shareManager]uploadWithAction:Action_file_upload images:images params:param successBlock:^(NSInteger errCode, id data, NSString *action, NSString *msg) {
         
     } failureBlock:^(NSError *error, NSString *errorDesc) {
         

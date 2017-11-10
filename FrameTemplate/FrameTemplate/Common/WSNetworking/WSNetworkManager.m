@@ -59,7 +59,7 @@
 
 #pragma -mark 网络请求方法
 
-+ (void)postWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock {
+- (void)postWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock {
     // 检查网络是否正常
     if ([WSNetworkManager checkNetworkStatusError]) {
         failureBlock(nil, @"");
@@ -67,10 +67,8 @@
         return;
     }
     
-    WSNetworkManager *manager = [WSNetworkManager shareManager];
-    
     /** 自定义处理请求数据
-    [manager.requestSerializer setQueryStringSerializationWithBlock:^NSString * _Nonnull(NSURLRequest * _Nonnull request, id  _Nonnull parameters, NSError * _Nullable __autoreleasing * _Nullable error) {
+    [self.requestSerializer setQueryStringSerializationWithBlock:^NSString * _Nonnull(NSURLRequest * _Nonnull request, id  _Nonnull parameters, NSError * _Nullable __autoreleasing * _Nullable error) {
         // 需要处理的参数
     }];
      */
@@ -81,7 +79,7 @@
     NSLog(@"=======================================");
 #endif
     
-    [manager POST:action parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self POST:action parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *response = (NSDictionary*)responseObject;
         
 #ifdef DEBUG
@@ -97,7 +95,7 @@
     }];
 }
 
-+ (void)getWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock {
+- (void)getWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock {
     // 检查网络是否正常
     if ([WSNetworkManager checkNetworkStatusError]) {
         failureBlock(nil, @"");
@@ -105,7 +103,7 @@
         return;
     }
     
-    [[WSNetworkManager shareManager]GET:action parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self GET:action parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *response = (NSDictionary*)responseObject;
         
 #ifdef DEBUG
@@ -120,7 +118,7 @@
     }];
 }
 
-+ (void)uploadWithAction:(NSString*)action images:(NSArray*)images params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock {
+- (void)uploadWithAction:(NSString*)action images:(NSArray*)images params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock {
     
     // 检查网络是否正常
     if ([WSNetworkManager checkNetworkStatusError]) {
@@ -129,7 +127,7 @@
         return;
     }
     
-    [[WSNetworkManager shareManager] POST:action parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [self POST:action parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         for (int i = 0; i < images.count; i++) {
             NSDictionary *imageDic = images[i];
             UIImage *image = [imageDic objectForKey:@"image"];

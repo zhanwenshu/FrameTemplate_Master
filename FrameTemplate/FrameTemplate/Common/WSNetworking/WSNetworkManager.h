@@ -28,7 +28,7 @@
  @param successBlock 请求成功回调
  @param failureBlock 请求失败回调
  */
-+ (void)postWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock;
+- (void)postWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock;
 
 /**
  GET请求
@@ -38,7 +38,7 @@
  @param successBlock 请求成功回调
  @param failureBlock 请求失败回调
  */
-+ (void)getWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock;
+- (void)getWithAction:(NSString*)action params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock;
 
 
 /**
@@ -50,7 +50,7 @@
  @param successBlock 请求成功回调
  @param failureBlock 请求失败回调
  */
-+ (void)uploadWithAction:(NSString*)action images:(NSArray*)images params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock;
+- (void)uploadWithAction:(NSString*)action images:(NSArray*)images params:(id)params successBlock:(WSRequestSuccessBlock)successBlock failureBlock:(WSRequestFailureBlock)failureBlock;
 
 
 /**
